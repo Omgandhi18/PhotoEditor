@@ -16,6 +16,8 @@
 		C05487A52C5518050056F114 /* PhotoEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05487A42C5518050056F114 /* PhotoEditorTests.swift */; };
 		C05487AF2C5518050056F114 /* PhotoEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05487AE2C5518050056F114 /* PhotoEditorUITests.swift */; };
 		C05487B12C5518050056F114 /* PhotoEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05487B02C5518050056F114 /* PhotoEditorUITestsLaunchTests.swift */; };
+		C05487BE2C5518A30056F114 /* ImageEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05487BD2C5518A30056F114 /* ImageEditVC.swift */; };
+		C05487C02C551E880056F114 /* ImageEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05487BF2C551E880056F114 /* ImageEditCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		C05487AA2C5518050056F114 /* PhotoEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05487AE2C5518050056F114 /* PhotoEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorUITests.swift; sourceTree = "<group>"; };
 		C05487B02C5518050056F114 /* PhotoEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C05487BD2C5518A30056F114 /* ImageEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditVC.swift; sourceTree = "<group>"; };
+		C05487BF2C551E880056F114 /* ImageEditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				C05487962C5518040056F114 /* Assets.xcassets */,
 				C05487982C5518040056F114 /* LaunchScreen.storyboard */,
 				C054879B2C5518040056F114 /* Info.plist */,
+				C05487BD2C5518A30056F114 /* ImageEditVC.swift */,
+				C05487BF2C551E880056F114 /* ImageEditCell.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				C05487922C5518040056F114 /* ViewController.swift in Sources */,
 				C054878E2C5518040056F114 /* AppDelegate.swift in Sources */,
+				C05487BE2C5518A30056F114 /* ImageEditVC.swift in Sources */,
+				C05487C02C551E880056F114 /* ImageEditCell.swift in Sources */,
 				C05487902C5518040056F114 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
