@@ -123,7 +123,7 @@
                                     <outlet property="delegate" destination="n8g-jE-VxG" id="NOj-1v-0Wz"/>
                                 </connections>
                             </collectionView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fob-gH-pMx">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fob-gH-pMx">
                                 <rect key="frame" x="0.0" y="702" width="393" height="100"/>
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OaH-SB-NoI">

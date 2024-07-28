@@ -18,13 +18,13 @@ class ImageEditVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
     var image: UIImage?
     
     var imageControlArr = [["name":"Exposure","value":0],
-                           ["name":"Brightness","value":0],
-                           ["name":"Highlights","value":0],
-                           ["name":"Shadows","value":0]] as [[String:Any]]
+                           ["name":"Brightness","value":0]] as [[String:Any]]
     var aCIImage = CIImage();
     var contrastFilter: CIFilter!;
     var brightnessFilter: CIFilter!;
     var exposureFilter: CIFilter!
+    var saturationFilter: CIFilter!
+    var sharpnessFilter: CIFilter!
     var context = CIContext();
     var outputImage = CIImage();
     var newUIImage = UIImage();
@@ -50,6 +50,10 @@ class ImageEditVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
             brightnessFilter.setValue(aCIImage, forKey: "inputImage")
         exposureFilter = CIFilter(name: "CIExposureAdjust")
         exposureFilter.setValue(aCIImage, forKey: "inputImage")
+        
+        saturationFilter = CIFilter(name: "CIColorControls")
+        saturationFilter.setValue(aCIImage, forKey: "inputImage")
+        
         imageScale = imgView.image?.scale ?? 0.00
         // Do any additional setup after loading the view.
     }
@@ -104,12 +108,6 @@ class ImageEditVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
             imgView.image = newUIImage.fixOrientation();
             imageControlArr[0]["value"] = sliderEditValues.value
             lblCurrentValue.text = String(format: "%.2f", imageControlArr[1]["value"] as? Float ?? 0.00)
-            break
-        case 2:
-            break
-        case 3:
-            break
-        case 4:
             break
         default:break
         }
